@@ -6,6 +6,7 @@ A modern, responsive frontend for the Student Management System built with React
 ## 🚀 Live Demo
 
 | **Frontend Application** | https://student-management-frontend-rgkn.vercel.app |
+
 | **Backend API** | https://student-management-backend-chi-indol.vercel.app |
 
 ## ✨ Features
