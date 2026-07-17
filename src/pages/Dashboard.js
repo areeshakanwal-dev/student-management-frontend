@@ -10,7 +10,7 @@ const Dashboard = () => {
     graduated: 0,
     inactive: 0,
   });
-  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     fetchStats();
@@ -27,8 +27,6 @@ const Dashboard = () => {
       setStats({ total, active, graduated, inactive });
     } catch (error) {
       console.error('Failed to fetch stats:', error);
-    } finally {
-      setLoading(false);
     }
   };
 
