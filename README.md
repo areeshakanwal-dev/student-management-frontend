@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+# 🎓 Student Management System - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📚 Overview
+A modern, responsive frontend for the Student Management System built with React.js. Features authentication, student CRUD operations, and a beautiful dashboard with statistics.
 
-## Available Scripts
+## 🚀 Live Demo
+- **Frontend:** https://student-management-frontend.vercel.app
+- **Backend API:** https://student-management-backend-chi-indol.vercel.app
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+### 🔐 Authentication
+- User Registration
+- User Login
+- JWT Token Storage
+- Protected Routes
+- Logout Functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📊 Dashboard
+- Welcome Message with User Name
+- Statistics Cards (Total, Active, Graduated, Inactive Students)
+- Quick Actions (Add Student, View All Students)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 👨‍🎓 Student Management
+- Add New Students
+- View All Students in Table
+- Edit Student Details
+- Update Student Status (Active, Inactive, Graduated)
+- Delete Students
+- Search and Filter Students
 
-### `npm test`
+### 🎨 Design Features
+- Modern UI with Glassmorphism Effects
+- Fully Responsive Design
+- Dark/Light Mode Toggle
+- Smooth Animations
+- Professional Color Scheme
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Technologies Used
+- **React.js** - UI Framework
+- **React Router** - Navigation
+- **Axios** - API Calls
+- **Context API** - State Management
+- **CSS3** - Styling with Animations
 
-### `npm run build`
+## 📋 Pages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Page | Route | Description |
+|------|-------|-------------|
+| Landing | `/` | Welcome page with hero section |
+| Login | `/login` | User login form |
+| Register | `/register` | New user registration |
+| Dashboard | `/dashboard` | Stats and quick actions |
+| Students | `/students` | Full student management |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# Clone the repository
+git clone https://github.com/areeshakanwal-dev/student-management-frontend.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Navigate to project directory
+cd student-management-frontend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Install dependencies
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Start development server
+npm start
 
-## Learn More
+Environment Variables:
+REACT_APP_API_URL=https://student-management-backend-chi-indol.vercel.app/api
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+student-management-frontend/
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Navbar.js
+│   │   │   ├── Footer.js
+│   │   │   └── LoadingSpinner.js
+│   │   └── students/
+│   │       ├── StudentForm.js
+│   │       ├── StudentList.js
+│   │       ├── StudentCard.js
+│   │       └── EditStudentModal.js
+│   ├── pages/
+│   │   ├── Landing.js
+│   │   ├── Login.js
+│   │   ├── Register.js
+│   │   ├── Dashboard.js
+│   │   └── Students.js
+│   ├── context/
+│   │   └── AuthContext.js
+│   ├── services/
+│   │   └── api.js
+│   ├── styles/
+│   │   └── App.css
+│   ├── App.js
+│   └── index.js
+├── public/
+├── package.json
+└── README.md
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## 🔗 API Integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The frontend communicates with the backend API:
 
-### Analyzing the Bundle Size
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| POST | `/api/auth/register` | Register new user | No |
+| POST | `/api/auth/login` | Login user | No |
+| GET | `/api/students` | Get all students | Yes |
+| POST | `/api/students` | Add new student | Yes |
+| PUT | `/api/students/:id` | Update student | Yes |
+| DELETE | `/api/students/:id` | Delete student | Yes |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🙏 Acknowledgments
+- React.js Team
+- Vercel for Hosting
+- MongoDB Atlas for Database
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 License
 
-### Advanced Configuration
+This project is for educational purposes as part of the internship program.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Built with ❤️ using React.js**
