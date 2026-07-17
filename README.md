@@ -4,8 +4,9 @@
 A modern, responsive frontend for the Student Management System built with React.js. Features authentication, student CRUD operations, and a beautiful dashboard with statistics.
 
 ## 🚀 Live Demo
-- **Frontend:** student-management-frontend-rgkn.vercel.app  
-- **Backend API:** https://student-management-backend-chi-indol.vercel.app
+
+| **Frontend Application** | https://student-management-frontend-rgkn.vercel.app |
+| **Backend API** | https://student-management-backend-chi-indol.vercel.app |
 
 ## ✨ Features
 
